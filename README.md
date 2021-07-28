@@ -3,7 +3,7 @@
 public folder
 src folder
 
-render method- HTML code
+npm i react-device-detect
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
