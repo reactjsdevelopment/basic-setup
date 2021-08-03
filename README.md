@@ -1,3 +1,17 @@
+https://www.ordinarycoders.com/blog/article/react-projects-github
+
+official site
+https://reactjs.org/docs/getting-started.html
+
+
+features of React? 
+It uses the virtual DOM instead of the real DOM.
+It uses server-side rendering.
+It follows uni-directional data flow or data binding
+
+app deployment-
+npm install gh-pages --save-dev
+ npm run deploy
 # About 
 
 public folder

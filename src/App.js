@@ -12,7 +12,10 @@ import ReactDOM from 'react-dom';
 
 
 // function type component declaration
+// functional components were called stateless components. Only class components were used for state management and lifecycle methods.
 
+// useState  hook:
+// in functional components, useState hook lets us define state for a component:
 function App2() {
   var myStyle = {
     fontSize: 100,

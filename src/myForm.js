@@ -32,6 +32,7 @@ class MyForm extends React.Component {
     //      */
   }
 
+  
   render() {
     let header = '';
     if (this.state.username) {
@@ -39,6 +40,16 @@ class MyForm extends React.Component {
     } else {
       header = '';
     }
+    
+    const ids = [1,2,3,4,5];
+    const listElements = ids.map((id)=>{
+     return(
+     <li key={id.toString()}>
+       {id}
+     </li>
+     )
+    })
+
     return (
       <div>
         {header}
@@ -59,6 +70,9 @@ class MyForm extends React.Component {
         <button onClick={(ev) => this.shoot2("Goal", ev)}>Take the shot2!</button>
 
         <button onClick={this.shoot2.bind(this, "Goal")}>Take the shot3!</button>
+
+    
+        
       </div>
 
     );
@@ -69,6 +83,14 @@ class MyForm extends React.Component {
 // To show any component 
 export default MyForm;
 
+// Explain React state and props.
+// Props-	State
+// Immutable-	Owned by its component
+// Has better performance-	Locally scoped
+// Can be passed to child components-	Witeable/Mutable
+                        // has setState() method to modify properties
+                        // Changes to state can be asynchronous
+                        // can only be passed as props
 
 
 

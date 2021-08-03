@@ -13,6 +13,7 @@ class Test extends React.Component {
   }
 
   //  React should continue with the rendering or not. default value is true
+  // To prevent the re-rendering of child component, we use the shouldComponentUpdate( )
   shouldComponentUpdate() {
     console.log('shouldComponentUpdate');
     return false;
