@@ -9,6 +9,9 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import ReactDOM from 'react-dom';
+import store from './store/index';
+import addArticle from './actions/index';
+import ViewApp from './components/main';
 
 
 // function type component declaration
@@ -21,6 +24,12 @@ function App2() {
     fontSize: 100,
     color: '#FF0000'
   }
+
+  console.log(store.getState(), 'store.getState()');
+  store.subscribe(() => console.log('Look ma, Redux!!'));
+  store.dispatch( addArticle({ title: 'React Redux Tutorial for Beginners', id: 1 }) );
+  console.log(store.getState(), 'store.getState()');
+
   //  To write HTML on multiple lines, put the HTML inside parentheses:
   return (
     // only one parent element
@@ -38,13 +47,13 @@ function App2() {
       </header>
       <div>
         {/* simple component */}
-        <Test favcol="new" />
+        {/* <Test favcol="new" />
 
         <Hello name="jhh" />
-        <MyForm color="red" />
+        <MyForm color="red" /> */}
 
 
-       
+        <ViewApp/>
 
 
 
@@ -67,7 +76,7 @@ export default App2;
 
 
 // you can also configure this in index.js
-render(<App2 />, document.getElementById('root'));
+// render(<App2 />, document.getElementById('root'));
 
 
 

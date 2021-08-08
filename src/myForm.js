@@ -1,8 +1,14 @@
-import React from 'react';
 
-// class type component declaration
+import NewType from './new';
+import React, { lazy, Suspense } from 'react';
+
+const Artists = lazy(() => import('./new'))
+// class type component declaration - stateful React component 
 class MyForm extends React.Component {
   // in constructor initiate the component's properties.
+
+          /* props- declare inside the usage of component,  variable name, 
+ Props are also how you pass data from one component to another, as parameters. */
   constructor(props) {
     // must call super it refers to the parent class.
     super(props);
@@ -41,21 +47,13 @@ class MyForm extends React.Component {
       header = '';
     }
     
-    const ids = [1,2,3,4,5];
-    const listElements = ids.map((id)=>{
-     return(
-     <li key={id.toString()}>
-       {id}
-     </li>
-     )
-    })
+  
 
     return (
       <div>
         {header}
 
-        {/* props- declare inside the usage of component,  variable name, 
- Props are also how you pass data from one component to another, as parameters. */}
+
 
         <h2>I am a {this.props.color} Car!</h2>;
 
@@ -71,8 +69,12 @@ class MyForm extends React.Component {
 
         <button onClick={this.shoot2.bind(this, "Goal")}>Take the shot3!</button>
 
-    
-        
+        {/* <NewType/> */}
+        {/* lazy load */}
+        <Suspense fallback={<h1>Still Loading…</h1>}>
+     <Artists />
+
+    </Suspense>
       </div>
 
     );
