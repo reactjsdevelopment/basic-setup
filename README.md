@@ -3,9 +3,18 @@
   redux
   npm i redux  ((normal concept))
   npm i react-redux --save-dev  (react mains])
+action constant- > action -> reducer  -> store ->  Component move state -> use in any component (dispatch)
+reducer keys you can access anywhere
 
   routes
   Component - hook and class based
+  various ways to add styling 
+lazy load components
+add className to html elements
+props usage
+states in hook and classes
+adding events on HTML elements
+data pass/share between components
 # About 
 
 public folder
