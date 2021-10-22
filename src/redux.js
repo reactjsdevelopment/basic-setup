@@ -10,3 +10,7 @@
 
 // mapStateToProps function (you can name it also "select")
 // a mapDispatchToProps function
+
+
+// action constant?- > action -> reducer (key access) -> store ->  Component move state -> use in any component (dispatch)
+
