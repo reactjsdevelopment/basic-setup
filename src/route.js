@@ -1,8 +1,14 @@
-// => react-router: the core library
-// => react-router-dom: a variant of the core library meant to be used for web applications
-// npm install --save react-router-dom
-// For the browser-based applications we are building, the BrowserRouter and HashRouter are a good fit
+import React, { Component }  from 'react';
+import { browserHistory, Router, Route, Switch , Redirect } from 'react-router';
 
+class Items extends Component {
+
+}
+
+class Link extends Component {
+
+  render(){
+    return(
 <div>
 <Route path="/items"/>
 
@@ -36,8 +42,8 @@
 <Redirect 
   to={{pathname: "/login", state: {from:props.location}}}
 />
-</div>
-
+</div>)
+}}
 
 export const Home = () => (
     <div>
