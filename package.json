@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "http://reactjsdevelopment.github.io/basic-setup",
+  "homepage": "http://reactjsdevelopment.github.io/redux-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
