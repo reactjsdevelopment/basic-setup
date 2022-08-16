@@ -4,7 +4,7 @@ import store from "../store/index";
 import NewApp from "./newapp";
 
 
-function ViewApp() {
+function MainApp() {
 
     return (
         <div>
@@ -17,5 +17,5 @@ function ViewApp() {
 
 }
 
-export default ViewApp;
+export default MainApp;
 

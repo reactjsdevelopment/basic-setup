@@ -4,19 +4,18 @@
 import React from 'react';
 import store from './store/index';
 import addArticle from './actions/index';
-import ViewApp from './components/main';
+import MainApp from './components/main';
 import { ADD_ARTICLE } from "./constants/action-types";
 
 
-function App2() {
+function App() {
 
 
-  console.log(store.getState(), 'store.getState()');
-  store.subscribe(() => console.log('Look ma, Redux!!'));
+
+  store.subscribe(() => console.log('Look ma, Redux!!', store.getState()));
   // first way
   // store.dispatch( addArticle({ title: 'React Redux Tutorial for Beginners', id: 1 }) );
 
-  console.log(store.getState(), 'store.getState()');
 
   // second way
   const addItemToCart = () => {
@@ -33,7 +32,7 @@ function App2() {
       <div>
  
 
-      <ViewApp/>
+      <MainApp/>
        
       <button onClick = {() => store.dispatch(addItemToCart())}>Add to cart</button>
 
@@ -47,15 +46,7 @@ function App2() {
 
 }
 
-export default App2;
-
-
-
-
-
-
-// you can also configure this in index.js
-// render(<App2 />, document.getElementById('root'));
+export default App;
 
 
 
