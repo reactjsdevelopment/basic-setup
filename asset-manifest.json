@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/basic-setup/static/js/main.38043ad8.js",
-    "index.html": "/basic-setup/index.html",
-    "main.38043ad8.js.map": "/basic-setup/static/js/main.38043ad8.js.map"
+    "main.js": "/redux-react/static/js/main.a6eca44e.js",
+    "index.html": "/redux-react/index.html",
+    "main.a6eca44e.js.map": "/redux-react/static/js/main.a6eca44e.js.map"
   },
   "entrypoints": [
-    "static/js/main.38043ad8.js"
+    "static/js/main.a6eca44e.js"
   ]
 }
