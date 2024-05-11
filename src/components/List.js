@@ -49,7 +49,7 @@ const ConnectedList = ({ articles, onAddExpense, onDelete, onUpdate }) =>
  
   <div>
     <ul>
-      {articles.map((el) => (
+      {articles && articles.map((el) => (
         <li key={el.id}>{el.title} get</li>
       ))}
     </ul>

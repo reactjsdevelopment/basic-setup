@@ -2,14 +2,14 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 export default function ResultTile() {
-  const questions = useSelector((state) => state.quiz.questions);
+//   const questions = useSelector((state) => state.quiz.questions);
 
-  const answers = useSelector((state) => state.quiz.answers);
-console.log(questions, answers, 'qa')
+//   const answers = useSelector((state) => state.quiz.answers);
+// console.log(questions, answers, 'qa')
   return (
     <>
-      {/* {questions.length && questions.map((question, index) => {
-        const selectedAnswer = answers[index];
+      {/* {questions.length && questions.map((question, ind) => {
+        const selectedAnswer = answers[ind];
         const correctAnswer = question.options.find((option) => option.isAnswer)?.name;
         const isCorrect = selectedAnswer === correctAnswer;
         return (

@@ -2,6 +2,7 @@ import { ADD_ARTICLE } from "../constants/action-types";
 
 import { v4 as uuidv4 } from 'uuid';
 
+// second create action method
 export function addArticle(payload) {
     return { type: ADD_ARTICLE, payload }
   };

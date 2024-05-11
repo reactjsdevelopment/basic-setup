@@ -8,7 +8,7 @@ import productReducer from '../reducers/productSlice';
 import testReducer from '../reducers/test';
 
 
-// first way to create store
+// fourth create store using reducer
 // const store = configureStore({reducer: rootReducer});
 
 // second way to create a store
