@@ -3,6 +3,7 @@ import store from './store/index';
 import addArticle from './actions/index';
 import MainApp from './components/main';
 import { ADD_ARTICLE } from './constants/action-types';
+// import { parse } from 'react-docgen';
 
 function App() {
   // to fetch store data
@@ -36,3 +37,7 @@ function App() {
   );
 }
 export default App;
+
+// const documentation = parse(App);
+ 
+// console.log(documentation);

@@ -28,6 +28,7 @@ Simple app to learn redux.
 
 ### Packages used
 - react-redux
+- "uuid": "^9.0.0"
 
 ## Subscribe and Stay Updated!
 
